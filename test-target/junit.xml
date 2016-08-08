@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="PhantomJS 1.9.8 (Linux 0.0.0)" package="unit" timestamp="2016-08-07T04:07:56" id="0" hostname="predix-devbox" tests="16" errors="0" failures="0" time="0.111">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
+    </properties>
+    <testcase name="will fetch deck by tag values" time="0.024" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix View Service with predix view service when getting asset by tag"/>
+    <testcase name="will resolve the promise with the deck" time="0.007" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix View Service with predix view service when getting asset by tag"/>
+    <testcase name="reject promise if the GET fails" time="0.004" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix View Service with predix view service when response fails getting asset root"/>
+    <testcase name="will fetch context root with default url and rootEntityId null" time="0.015" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when getting asset root"/>
+    <testcase name="will resolve the promise with the default transformed data" time="0.003" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when getting asset root"/>
+    <testcase name="reject promise if the GET fails" time="0.003" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when response fails getting asset root"/>
+    <testcase name="will fetch asset root with default url and rootEntityId 24" time="0.003" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when getting the children of an asset"/>
+    <testcase name="will resolve the promise with the default transformed data" time="0.009" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when getting the children of an asset"/>
+    <testcase name="will resolve the promise with empty string in meta.link" time="0.003" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when getting the children of an asset"/>
+    <testcase name="will resolve the promise with url in meta.link" time="0.012" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when getting children with option link is empty"/>
+    <testcase name="reject promise if the GET fails" time="0.004" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).The Predix Asset Service with predix asset service when response fails getting the children of a node"/>
+    <testcase name="should set the url on the context" time="0.005" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).Sample controller"/>
+    <testcase name="should turn a string into a slug" time="0.004" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).slugify filter"/>
+    <testcase name="should turn a string into a lowercase slug" time="0.004" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).slugify filter"/>
+    <testcase name="should render the version" time="0.009" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).appVersion directive"/>
+    <testcase name="should return the version" time="0.002" classname="unit PhantomJS 1.9.8 (Linux 0.0.0).version service"/>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>

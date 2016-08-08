@@ -1,0 +1,27 @@
+{
+    "name": "px-tooltip",
+    "version": "0.6.8",
+    "main": [
+        "px-tooltip.html"
+    ],
+    "ignore": [
+        ".*",
+        "npm-debug.log",
+        "Gruntfile.js",
+        "sass",
+        "bower_components",
+        "node_modules",
+        "test",
+        "OSS_Notice.pdf"
+    ],
+    "dependencies": {
+        "iron-resizable-behavior": "PolymerElements/iron-resizable-behavior#~1.0.2",
+        "polymer": "~1.4.0",
+        "px-theme": "https://github.com/PredixDev/px-theme.git#~0.7.0"
+    },
+    "devDependencies": {
+        "iron-component-page": "PolymerElements/iron-component-page#~v1.1.0",
+        "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.0",
+        "web-component-tester": "~3.3.14"
+    }
+}

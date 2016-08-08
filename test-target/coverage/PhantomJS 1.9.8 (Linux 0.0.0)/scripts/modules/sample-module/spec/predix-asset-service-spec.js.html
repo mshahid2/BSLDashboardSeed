@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for scripts/modules/sample-module/spec/predix-asset-service-spec.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../prettify.css">
+    <link rel="stylesheet" href="../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">scripts/modules/sample-module/spec/predix-asset-service-spec.js</span></h1>
+    <h2>
+        Statements: <span class="metric">100% <small>(87 / 87)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(4 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">100% <small>(23 / 23)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">100% <small>(87 / 87)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">scripts/modules/sample-module/spec/</a> &#187; predix-asset-service-spec.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * These are actual tests for the Predix Asset Service.  Take 'em of leave 'em. :)
+ */
+define(['angular', 'angular-mocks', 'app'], function(angular) {
+    'use strict';
+&nbsp;
+    var topLevelData = [
+        {
+            'assetId': '001-1',
+            'description': 'Mustang',
+            'uri': '001-1',
+            'classification': 'car',
+            'parent': null,
+            'attributes': {
+                isNotOpenable: false
+            }
+        },
+        {
+            'assetId': '001-2',
+            'description': 'Sandy',
+            'uri': '001-2',
+            'classification': 'car',
+            'parent': null,
+            'attributes': {
+                isNotOpenable: false
+            }
+        },
+        {
+            'assetId': '001-3',
+            'description': 'Nothing',
+            'uri': '001-3',
+            'classification': 'car',
+            'parent': null,
+            'attributes': {
+                isNotOpenable: false
+            }
+        }
+    ];
+&nbsp;
+    var secondLevelData = [
+        {
+            'assetId': '001-1-1',
+            'description': 'Wheels',
+            'uri': '001-1-1',
+            'classification': 'car',
+            'parent': '001-1',
+            'attributes': {
+                isNotOpenable: false
+            }
+        },
+        {
+            'assetId': '001-1-2',
+            'description': 'Brakes',
+            'uri': '001-1-2',
+            'classification': 'car',
+            'parent': '001-1',
+            'attributes': {
+                isNotOpenable: false
+            }
+        }
+    ];
+&nbsp;
+    describe('The Predix Asset Service', function() {
+        var PredixAssetService, $log, $httpBackend, q, successCallback, errorCallback, $rootScope;
+&nbsp;
+        beforeEach(module('predixApp'));
+&nbsp;
+        beforeEach(function() {
+            angular.module('testModule', ['predixApp']);
+            module('testModule');
+        });
+&nbsp;
+        beforeEach(inject(function(_PredixAssetService_, _$httpBackend_, _$rootScope_, $q, _$log_) {
+            PredixAssetService = _PredixAssetService_;
+            $httpBackend = _$httpBackend_;
+            $rootScope = _$rootScope_;
+            q = $q;
+            $log = _$log_;
+        }));
+&nbsp;
+        describe('with predix asset service', function() {
+&nbsp;
+            describe('when getting asset root', function() {
+&nbsp;
+                beforeEach(function() {
+                    successCallback = jasmine.createSpy('successCallback');
+                    errorCallback = jasmine.createSpy('errorCallback');
+&nbsp;
+                    $httpBackend.when('GET', '/sample-data/sample-asset-null.json').respond(topLevelData);
+                    PredixAssetService.getAssetsByParentId(null).then(successCallback, errorCallback);
+                });
+&nbsp;
+                it('will fetch context root with default url and rootEntityId null', function() {
+                    $httpBackend.expectGET('/sample-data/sample-asset-null.json');
+                    $httpBackend.flush();
+                });
+&nbsp;
+                it('will resolve the promise with the default transformed data', function() {
+                    $httpBackend.flush();
+&nbsp;
+                    var context = successCallback.calls[0].args[0].data;
+                    var assetData = topLevelData[0];
+&nbsp;
+                    expect(context.length).toBe(topLevelData.length);
+                    expect(context[0].name).toBe(assetData.assetId);
+                    expect(context[0].id).toBe(assetData.uri);
+                    expect(context[0].classification).toBe(assetData.classification);
+                    expect(context[0].parentId).toBe(assetData.parent);
+                    expect(context[0].isOpenable).toBe(!(assetData.attributes &amp;&amp; assetData.attributes.isNotOpenable));
+                });
+            });
+&nbsp;
+            describe('when response fails getting asset root', function() {
+&nbsp;
+                beforeEach(function() {
+                    successCallback = jasmine.createSpy('successCallback');
+                    errorCallback = jasmine.createSpy('errorCallback');
+&nbsp;
+                    $httpBackend.when('GET', '/sample-data/sample-asset-null.json').respond(500);
+                    PredixAssetService.getAssetsByParentId(null).then(successCallback, errorCallback);
+                    $httpBackend.flush();
+                });
+&nbsp;
+                it('reject promise if the GET fails', function() {
+                    expect(errorCallback).toHaveBeenCalledWith('Error fetching asset with id ' + null);
+                });
+            });
+&nbsp;
+            describe('when getting the children of an asset', function() {
+&nbsp;
+                beforeEach(function() {
+                    successCallback = jasmine.createSpy('successCallback');
+                    errorCallback = jasmine.createSpy('errorCallback');
+&nbsp;
+                    $httpBackend.when('GET', '/sample-data/sample-asset-24.json').respond(secondLevelData);
+                    PredixAssetService.getAssetsByParentId(24).then(successCallback, errorCallback);
+                });
+&nbsp;
+                it('will fetch asset root with default url and rootEntityId 24', function() {
+                    $httpBackend.expectGET('/sample-data/sample-asset-24.json');
+                    $httpBackend.flush();
+                });
+&nbsp;
+                it('will resolve the promise with the default transformed data', function() {
+                    $httpBackend.flush();
+&nbsp;
+                    var context = successCallback.calls[0].args[0].data;
+                    var assetData = secondLevelData[0];
+                    expect(context.length).toBe(secondLevelData.length);
+                    expect(context[0].name).toBe(assetData.assetId);
+                    expect(context[0].id).toBe(assetData.uri);
+                    expect(context[0].classification).toBe(assetData.classification);
+                    expect(context[0].parentId).toBe(assetData.parent);
+                    expect(context[0].isOpenable).toBe(!(assetData.attributes &amp;&amp; assetData.attributes.isNotOpenable));
+                });
+&nbsp;
+                it('will resolve the promise with empty string in meta.link', function() {
+                    $httpBackend.flush();
+&nbsp;
+                    var meta = successCallback.calls[0].args[0].meta;
+                    expect(meta.link).toBe('');
+                });
+            });
+&nbsp;
+            describe('when getting children with option link is empty', function() {
+                var options = {link: ''};
+&nbsp;
+                beforeEach(function() {
+                    successCallback = jasmine.createSpy('successCallback');
+                    errorCallback = jasmine.createSpy('errorCallback');
+&nbsp;
+                    PredixAssetService.getAssetsByParentId(24, options).then(successCallback, errorCallback);
+                    $rootScope.$apply();
+                });
+&nbsp;
+                it('will resolve the promise with url in meta.link', function() {
+                    var result = successCallback.calls[0].args[0];
+                    expect(result.meta.link).toBe('');
+                    expect(result.data.length).toBe(0);
+                });
+            });
+&nbsp;
+            describe('when response fails getting the children of a node', function() {
+&nbsp;
+                beforeEach(function() {
+                    successCallback = jasmine.createSpy('successCallback');
+                    errorCallback = jasmine.createSpy('errorCallback');
+&nbsp;
+                    $httpBackend.when('GET', '/sample-data/sample-asset-24.json').respond(500);
+                    PredixAssetService.getAssetsByParentId(24).then(successCallback, errorCallback);
+                    $httpBackend.flush();
+                });
+&nbsp;
+                it('reject promise if the GET fails', function() {
+                    expect(errorCallback).toHaveBeenCalledWith('Error fetching asset with id 24');
+                });
+            });
+&nbsp;
+        });
+    });
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Aug 07 2016 04:07:56 GMT+0000 (UTC)</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

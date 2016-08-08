@@ -1,0 +1,39 @@
+{
+  "name": "px-simple-line-chart",
+  "version": "1.3.0",
+  "main": [
+    "px-simple-line-chart.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test"
+  ],
+  "dependencies": {
+    "polymer": "~v1.4.0",
+    "px-theme": "https://github.com/PredixDev/px-theme.git#~0.7.0",
+    "d3": "~3.5.6",
+    "px-simple-chart-common-behavior": "https://github.com/PredixDev/px-simple-chart-common-behavior.git#~1.3.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#~v1.0.0",
+    "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.0",
+    "px-slider": "https://github.com/PredixDev/px-slider.git#~0.4.0",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1",
+    "underscore": "~1.8.3"
+  },
+  "homepage": "https://github.com/PredixDev/px-simple-line-chart",
+  "_release": "1.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.3.0",
+    "commit": "c74b7a6f00367773545a611d26d3f6ad6a2527f9"
+  },
+  "_source": "https://github.com/PredixDev/px-simple-line-chart.git",
+  "_target": "v1.3.0",
+  "_originalSource": "https://github.com/PredixDev/px-simple-line-chart.git"
+}

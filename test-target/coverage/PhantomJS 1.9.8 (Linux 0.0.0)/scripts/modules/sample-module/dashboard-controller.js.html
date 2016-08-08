@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for scripts/modules/sample-module/dashboard-controller.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">scripts/modules/sample-module/dashboard-controller.js</span></h1>
+    <h2>
+        Statements: <span class="metric">7.69% <small>(2 / 26)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">12.5% <small>(1 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">7.69% <small>(2 / 26)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">scripts/modules/sample-module/</a> &#187; dashboard-controller.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define(['angular', './sample-module'], function (angular, controllers) {
+    'use strict';
+&nbsp;
+    // Controller definition
+    controllers.controller('DashboardsCtrl', ['$scope', '$log', 'PredixAssetService', 'PredixViewService', <span class="fstat-no" title="function not covered" >function ($scope, $log, PredixAssetService, PredixViewService) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        PredixAssetService.getAssetsByParentId('root').then(<span class="fstat-no" title="function not covered" >function (initialContext) {</span></span>
+&nbsp;
+            //pre-select the 1st asset
+<span class="cstat-no" title="statement not covered" >            initialContext.data[0].selectedAsset = true;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.initialContexts = initialContext;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.initialContextName = initialContext.data[0].name;</span>
+&nbsp;
+            //load view selector
+<span class="cstat-no" title="statement not covered" >            $scope.openContext($scope.initialContexts.data[0]);</span>
+        }, <span class="fstat-no" title="function not covered" >function (message) {</span>
+<span class="cstat-no" title="statement not covered" >            $log.error(message);</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.decks = [];</span>
+<span class="cstat-no" title="statement not covered" >        $scope.selectedDeckUrl = null;</span>
+&nbsp;
+        // callback for when the Open button is clicked
+<span class="cstat-no" title="statement not covered" >        $scope.openContext = <span class="fstat-no" title="function not covered" >function (contextDetails) {</span></span>
+&nbsp;
+            // need to clean up the context details so it doesn't have the infinite parent/children cycle,
+            // which causes problems later (can't interpolate: {{context}} TypeError: Converting circular structure to JSON)
+<span class="cstat-no" title="statement not covered" >            var newContext = angular.copy(contextDetails);</span>
+<span class="cstat-no" title="statement not covered" >            newContext.children = [];</span>
+<span class="cstat-no" title="statement not covered" >            newContext.parent = [];</span>
+&nbsp;
+            // url end point can change from context to context
+            // so the same card can display different data from different contexts
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            var url = {</span>
+                'parent': {
+                    'datagrid-data': '/sample-data/datagrid-data.json'
+                },
+                'child': {
+                    'core-vibe-rear-cruise': '/sample-data/core-vibe-rear-cruise.json',
+                    'delta-egt-cruise': '/sample-data/delta-egt-cruise.json'
+                },
+                'child2': {
+                    'core-vibe-rear-cruise': '/sample-data/core-vibe-rear-cruise0.json',
+                    'delta-egt-cruise': '/sample-data/delta-egt-cruise.json'
+                },
+                'child3': {
+                    'core-vibe-rear-cruise': '/sample-data/core-vibe-rear-cruise1.json',
+                    'delta-egt-cruise': '/sample-data/delta-egt-cruise.json'
+                }
+            };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            newContext.urls = url[newContext.id];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            $scope.context = newContext;</span>
+&nbsp;
+            //Tag string can be classification from contextDetails
+<span class="cstat-no" title="statement not covered" >            PredixViewService.getDecksByTags(newContext.classification) // gets all decks for this context</span>
+                .then(<span class="fstat-no" title="function not covered" >function (decks) {</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.decks = [];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    if (decks &amp;&amp; decks.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >                        decks.forEach(<span class="fstat-no" title="function not covered" >function (deck) {</span></span>
+<span class="cstat-no" title="statement not covered" >                            $scope.decks.push({name: deck.title, id: deck.id});</span>
+                        });
+                    }
+                });
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.viewServiceBaseUrl = PredixViewService.baseUrl;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.getChildren = <span class="fstat-no" title="function not covered" >function (parent, options) {</span></span>
+<span class="cstat-no" title="statement not covered" >            return PredixAssetService.getAssetsByParentId(parent.id, options);</span>
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.handlers = {</span>
+            itemOpenHandler: $scope.openContext,
+            getChildren: $scope.getChildren
+            // (optional) click handler: itemClickHandler: $scope.clickHandler
+        };
+    }]);
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Aug 07 2016 04:07:56 GMT+0000 (UTC)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

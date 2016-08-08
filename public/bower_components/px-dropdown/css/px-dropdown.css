@@ -1,0 +1,225 @@
+/*
+ * Copyright (c) 2014 GE Global Research. All rights reserved.
+ *
+ * The copyright to the computer software herein is the property of
+ * GE Global Research. The software may be used and/or copied only
+ * with the written permission of GE Global Research or in accordance
+ * with the terms and conditions stipulated in the agreement/contract
+ * under which the software has been supplied.
+ */
+/*
+THIS FILE SHOULD CONTAIN ONLY RULES SPECIFIC TO PREDIX BRANDING
+common/abstract rules go in px-dropdown-sketch.scss, not in this file.
+*/
+/*
+ * Copyright (c) 2014 GE Global Research. All rights reserved.
+ *
+ * The copyright to the computer software herein is the property of
+ * GE Global Research. The software may be used and/or copied only
+ * with the written permission of GE Global Research or in accordance
+ * with the terms and conditions stipulated in the agreement/contract
+ * under which the software has been supplied.
+ */
+/*
+THIS FILE SHOULD CONTAIN ONLY ABSTRACT/'SKETCH' THEME RULES, NOT SPECIFIC TO PREDIX BRANDING
+Predix branding rules go in px-dropdown-predix.scss, not in this file.
+*/
+.flex {
+  display: -ms-flexbox;
+  display: flex; }
+
+.inline--flex {
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.flex--row {
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.flex--row--rev {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+
+.flex--col {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.flex--col--rev {
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+
+.flex--nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.flex--wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.flex--wrap--rev {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
+
+.flex--left {
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.flex--center {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.flex--right {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.flex--justify {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.flex--spaced {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.flex--top {
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.flex--middle {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.flex--bottom {
+  -ms-flex-align: end;
+      align-items: flex-end; }
+
+.flex--stretch {
+  -ms-flex-align: stretch;
+      align-items: stretch; }
+
+.flex--baseline {
+  -ms-flex-align: baseline;
+      align-items: baseline; }
+
+.flex--top--multi {
+  -ms-flex-line-pack: start;
+      align-content: flex-start; }
+
+.flex--middle--multi {
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.flex--bottom--multi {
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
+
+.flex--stretch--multi {
+  -ms-flex-line-pack: stretch;
+      align-content: stretch; }
+
+.flex--justify--multi {
+  -ms-flex-line-pack: justify;
+      align-content: space-between; }
+
+.flex--spaced--multi {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around; }
+
+.flex__item {
+  -ms-flex: 1;
+      flex: 1; }
+
+.flex__item--top {
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.flex__item--middle {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.flex__item--bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.flex__item--baseline {
+  -ms-flex-item-align: baseline;
+      align-self: baseline; }
+
+.viewport {
+  width: 100%;
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.viewport--full-height {
+  min-height: 100vh; }
+
+:host {
+  max-height: 2.0666666667rem; }
+
+/*------------------------------------*    #PX-COLORS-DESIGN
+\*------------------------------------*/
+/**
+ * Brand Colors
+ */
+/**
+     * Primary
+     */
+/**
+     * Light
+     */
+/**
+     * Dark
+     */
+/**
+ * Monochromatic (gray10 is darkest, gray1 is lightest)
+ */
+/**
+ * Define grey = gray to avoid dev typos
+ */
+/**
+ * Buttons
+ */
+/**
+ * Selection
+ */
+/**
+ * Alerts
+ */
+/**
+ * Data Visualization
+ */
+/**
+     * Basic
+     */
+/**
+     * Light
+     */
+/**
+     * Dark
+     */
+/*------------------------------------*    #CLEARFIX
+\*------------------------------------*/
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
+ * over and over in your markup.
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.dropcell {
+  background-color: var(--dropdown_bg_default, #e4e4ea);
+  border: var(--dropdown_border_color, 1px solid #b1b1bc);
+  border-radius: 3px;
+  cursor: pointer; }
+  .dropcell:hover {
+    background-color: var(--dropdown_bg_hover, #b1b1bc);
+    color: var(--dropdown_text_color--hover, black); }
+  .dropcell:active {
+    color: var(--dropdown_text_color--pressed, black); }
+
+.opened {
+  background-color: var(--dropdown_bg_opened, #9999a3);
+  color: var(--dropdown_text--opened, black); }

@@ -1,0 +1,26 @@
+{
+  "name": "ng-bind-polymer",
+  "main": "ng-bind-polymer.js",
+  "version": "0.0.4",
+  "authors": [
+    "PX"
+  ],
+  "description": "Angular directive for binding with Polymer components.",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/PredixDev/ng-bind-polymer",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "b441a253a3d895162a47b20a538acf373851c9a0"
+  },
+  "_source": "https://github.com/PredixDev/ng-bind-polymer.git",
+  "_target": "~v0.0.3",
+  "_originalSource": "https://github.com/PredixDev/ng-bind-polymer.git"
+}
