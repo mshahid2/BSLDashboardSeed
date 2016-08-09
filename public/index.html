@@ -20,13 +20,21 @@
     <link rel="import" href="polymer-loader.vulcanized.html">
 
 </head>
-<body>
+<!-- <body>
 <template is="dom-bind">
 <iron-ajax url="https://bslpredixmicro.run.aws-usw02-pr.ice.predix.io/customers" last-response="{{employees}}" auto></iron-ajax>
 <px-data-table show-column-chooser enable-column-resize enable-column-reorder hide-pagination-control table-data="{{employees}}">
 </px-data-table>
 </template>
-</body>
+</body> -->
+
+<iron-ajax
+    auto
+    url="https://bslpredixmicro.run.aws-usw02-pr.ice.predix.io/customers"
+    handle-as="json"
+    on-response="handleResponse"
+    debounce-duration="300"></iron-ajax>
+    
 <body unresolved class="app" data-ng-controller="MainCtrl">
     <header role="banner">
         <div class="viewport">
