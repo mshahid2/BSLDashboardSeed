@@ -27,13 +27,14 @@
 </px-data-table>
 </template>
 </body> -->
-
+<!--
 <iron-ajax
     auto
     url="https://bslpredixmicro.run.aws-usw02-pr.ice.predix.io/customers"
     handle-as="json"
     on-response="handleResponse"
     debounce-duration="300"></iron-ajax>
+    -->
     
 <body unresolved class="app" data-ng-controller="MainCtrl">
     <header role="banner">
@@ -77,6 +78,15 @@
         </div>
     </footer>
     <google-analytics code="UA-72329845-1"></google-analytics>
+    
+    <template is="dom-bind">
+ <template is="dom-repeat" items="{{data}}">
+ <span>{{item.id}}</span>
+ <span>{{item.name}}</span>
+ <br />
+ </template>
+ <iron-ajax auto id="GetData" url="https://bslpredixmicro.run.aws-usw02-pr.ice.predix.io/customers" handle-as="json" last-response="{{data}}" ></iron-ajax>
+</template>
 </body>
 <script>
     // IE11 workaround: We can't rely on IE's load order for scripts that are loaded outside of require.js (might
